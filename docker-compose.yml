@@ -1,0 +1,8 @@
+version: '2.1'
+volumes:
+  dat:
+services:
+  dat-homeserver:
+    build: ./dat-homeserver
+    volumes:
+      - 'dat:/data/'
