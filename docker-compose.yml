@@ -6,7 +6,7 @@ services:
     build: ./dat-homeserver
     volumes:
       - 'dat:/data/'
-    ports:
-      - 3282:3282/tcp
-      - 3282:3282/udp
-      - 5353:5353/udp
+    # ports:
+      # - 3282:3282/tcp
+      # - 3282:3282/udp
+      # - 5353:5353/udp
