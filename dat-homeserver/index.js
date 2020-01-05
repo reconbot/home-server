@@ -22,6 +22,8 @@ const subscribeStats = dat => {
 }
 
 async function run() {
+  console.log('waiting')
+  await new Promise(resolve => setTimeout(resolve, 600000))
   console.log('running')
   const librarian = new DatLibrarian({ dir: dataDirectory })
   librarian.on('add', dat => {
