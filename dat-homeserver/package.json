@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dat": "^13.13.1",
     "dat-librarian": "^1.1.8-beta"
   }
 }
