@@ -15,9 +15,14 @@ process.env.log = 'true'
 const datId = dat => dat.archive.key.toString('hex')
 const subscribeStats = dat => {
   const stats = dat.trackStats()
+
   setInterval(() => {
+    const { length, downloaded } = stats.get()
+    const download = {
+      length, downloaded, percent: Math.round(downloaded / length * 100)
+    }
     const { network, peers } = stats
-    console.log(JSON.stringify({ id: datId(dat), network, peers }))
+    console.log(JSON.stringify({ id: datId(dat), download, network, peers }))
   }, 5000)
 }
 
