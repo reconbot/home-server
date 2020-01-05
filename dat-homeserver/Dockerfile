@@ -3,6 +3,7 @@ FROM balenalib/raspberrypi3-node:10-build
 WORKDIR /app
 
 EXPOSE 3282
+EXPOSE 5353
 
 ENV DATA_DIRECTORY /data/
 VOLUME $DATA_DIRECTORY
