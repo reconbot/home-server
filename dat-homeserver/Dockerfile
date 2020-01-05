@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-alpine-node:12-build
+FROM balenalib/raspberrypi3-node:10-build
 # FROM balenalib/%%BALENA_MACHINE_NAME%%-node:12-stretch-run
 WORKDIR /app
 
