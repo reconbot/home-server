@@ -22,6 +22,7 @@ const subscribeStats = dat => {
 }
 
 async function run() {
+  console.log('running')
   const librarian = new DatLibrarian({ dir: dataDirectory })
   librarian.on('add', dat => {
     console.log('add', datId(dat))
