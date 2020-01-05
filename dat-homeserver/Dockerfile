@@ -2,7 +2,7 @@ FROM balenalib/raspberrypi3-node:10-build
 # FROM balenalib/%%BALENA_MACHINE_NAME%%-node:12-stretch-run
 WORKDIR /app
 
-# EXPOSE 4001
+EXPOSE 3282
 
 ENV DATA_DIRECTORY /data/
 VOLUME $DATA_DIRECTORY
