@@ -6,6 +6,4 @@ services:
     build: ./dat-homeserver
     volumes:
       - 'dat:/data/'
-    ports:
-      - 3282
-      - 5353
+    network_mode: "host"
