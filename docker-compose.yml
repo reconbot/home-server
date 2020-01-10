@@ -7,3 +7,5 @@ services:
     volumes:
       - 'dat:/data/'
     network_mode: "host"
+  homebridge:
+    build: ./homebrdige

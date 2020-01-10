@@ -1,0 +1,17 @@
+{
+  "name": "my-homebridge",
+  "version": "1.0.0",
+  "description": "homebridge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "homebridge": "^0.4.50",
+    "homebridge-sonos": "^0.2.5",
+    "reconbot": "^1.0.1"
+  }
+}

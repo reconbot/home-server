@@ -1,0 +1,15 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "pin": "031-45-154",
+    "username": "AC:32:3D:ED:CE:C0"
+  },
+  "description": "My config.",
+  "accessories": [
+    {
+      "accessory": "Sonos",
+      "name": "Living Room Speakers",
+      "room": "Living Room"
+    }
+  ]
+}
