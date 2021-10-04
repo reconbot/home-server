@@ -19,7 +19,7 @@ services:
       - VERSION=docker
       - PLEX_CLAIM= #optional
     volumes:
-      - library:/config
-      - tvseries:/tv
-      - movies:/movies
+      # - library:/config
+      # - tvseries:/tv
+      # - movies:/movies
     restart: unless-stopped
