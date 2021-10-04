@@ -18,7 +18,7 @@ services:
       - PGID=1000
       - VERSION=docker
       - PLEX_CLAIM= #optional
-    volumes:
+    # volumes:
       # - library:/config
       # - tvseries:/tv
       # - movies:/movies
