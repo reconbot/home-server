@@ -3,6 +3,7 @@ volumes:
   library:
   tvseries:
   movies:
+  filebrowser:
 services:
   # dat-homeserver:
   #   build: ./dat-homeserver
@@ -25,3 +26,10 @@ services:
       - tvseries:/tv
       - movies:/movies
     restart: unless-stopped
+  filebrowser:
+    image: filebrowser/filebrowser
+    network_mode: host
+    volumes:
+      - filebrowser:/database.db
+      - tvseries:/srv/tv
+      - movies:/srv/movies
