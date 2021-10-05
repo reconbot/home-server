@@ -1,6 +1,8 @@
 version: '2.1'
 volumes:
-  dat:
+  library:
+  tvseries:
+  movies:
 services:
   # dat-homeserver:
   #   build: ./dat-homeserver
@@ -17,9 +19,9 @@ services:
       - PUID=1000
       - PGID=1000
       - VERSION=docker
-      - PLEX_CLAIM= #optional
-    # volumes:
-      # - library:/config
-      # - tvseries:/tv
-      # - movies:/movies
+      # - PLEX_CLAIM= #optional
+    volumes:
+      - library:/config
+      - tvseries:/tv
+      - movies:/movies
     restart: unless-stopped
